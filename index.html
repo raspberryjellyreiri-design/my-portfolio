@@ -31,12 +31,17 @@
             border: 2px solid #ffffff;
         }
 
-        /* アイコン（貝殻） */
-        .icon {
-            font-size: 50px;
+        /* アイコン（新しい画像に変更） */
+        .icon-img {
+            width: 150px; /* 画像のサイズを調整 */
+            height: auto;
+            border-radius: 50%; /* 丸く切り抜く */
             margin-bottom: 20px;
             display: inline-block;
             filter: drop-shadow(0 0 5px rgba(255, 182, 193, 0.5));
+            /* 画像にパールの枠を追加 */
+            border: 4px solid #e0f2f1; 
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
 
         h1 {
@@ -84,7 +89,8 @@
 <body>
 
     <div class="container">
-        <div class="icon">🐚</div>
+        <img src="image_0.png" alt="るあさんのアイコン" class="icon-img"> 
+        
         <h1>るあ (Lua)</h1>
         
         <div class="profile-text">
