@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lua's Portfolio 🐚</title>
     <style>
-        /* 全体の設定 */
         body {
             margin: 0;
             padding: 0;
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            background: linear-gradient(135deg, #f3e5f5 0%, #e1f5fe 100%); /* 薄紫から水色のグラデーション */
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1f5fe 100%);
             color: #5d5d5d;
             display: flex;
             justify-content: center;
@@ -18,7 +17,6 @@
             min-height: 100vh;
         }
 
-        /* カードのデザイン（パールの光沢感を意識） */
         .container {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
@@ -26,27 +24,24 @@
             width: 90%;
             padding: 40px 20px;
             border-radius: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), inset 0 0 15px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             text-align: center;
             border: 2px solid #ffffff;
         }
 
-        /* アイコン（新しい画像に変更） */
         .icon-img {
-            width: 150px; /* 画像のサイズを調整 */
-            height: auto;
-            border-radius: 50%; /* 丸く切り抜く */
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
             margin-bottom: 20px;
-            display: inline-block;
-            filter: drop-shadow(0 0 5px rgba(255, 182, 193, 0.5));
-            /* 画像にパールの枠を追加 */
-            border: 4px solid #e0f2f1; 
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         h1 {
             font-size: 1.5rem;
-            color: #9c27b0; /* 紫 */
+            color: #9c27b0;
             margin-bottom: 20px;
         }
 
@@ -55,14 +50,14 @@
             line-height: 1.8;
             text-align: left;
             margin-bottom: 30px;
-            padding: 0 10px;
+            padding: 0 15px;
+            white-space: pre-wrap;
         }
 
-        /* ボタンのデザイン（ミントグリーンとピンク） */
         .note-link {
             display: inline-block;
             text-decoration: none;
-            background: #e0f2f1; /* ミントグリーン */
+            background: #e0f2f1;
             color: #00796b;
             padding: 15px 40px;
             border-radius: 50px;
@@ -73,7 +68,7 @@
         }
 
         .note-link:hover {
-            background: #fce4ec; /* ホバー時にピンク */
+            background: #fce4ec;
             color: #d81b60;
             transform: translateY(-2px);
             border-color: #f8bbd0;
@@ -89,13 +84,11 @@
 <body>
 
     <div class="container">
-        <img src="image_0.png" alt="るあさんのアイコン" class="icon-img"> 
+        <img src="1000028683.png" alt="るあさんのアイコン" class="icon-img"> 
         
         <h1>るあ (Lua)</h1>
         
-        <div class="profile-text">
-            HSS型HSPの40代ワンオペママ。10年の重度不眠をお出汁とAIで克服した経験から、自責の毎日を卒業し、心に「余白」を作るヒントを発信しています。繊細な自分を認め、もっと好きになれるような優しい居場所を。パステルカラーとパール、AIが私の相棒です。🐚✨
-        </div>
+        <div class="profile-text">HSS型HSPの40代ワンオペママ。10年の重度不眠をお出汁とAIで克服した経験から、自責の毎日を卒業し、心に「余白」を作るヒントを発信しています。繊細な自分を認め、もっと好きになれるような優しい居場所を。パステルカラーとパール、AIが私の相棒です。🐚✨</div>
 
         <a href="https://note.com/lua_lua3/n/n1356f0f40b4d" target="_blank" class="note-link">
             noteで記事を読む ✨
