@@ -3,39 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <title>Lua's Portfolio 🐚</title>
     <style>
-        body { font-family: 'Zen Maru Gothic', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #fdfbf7 0%, #fcede6 100%); color: #5a4d4d; display: flex; justify-content: center; min-height: 100vh; }
-        .container { width: 100%; max-width: 480px; padding: 40px 20px; text-align: center; }
-        .profile-img { width: 120px; height: 120px; background-color: #e0d4cc; background-image: url('https://placehold.co/240x240/e6c8c1/ffffff?text=Icon'); background-size: cover; border-radius: 50%; margin: 0 auto 20px; border: 4px solid #fff; box-shadow: 0 8px 16px rgba(149, 132, 126, 0.1); }
-        h1 { font-size: 22px; margin-bottom: 10px; color: #8c7b75; }
-        .bio { font-size: 14px; line-height: 1.8; margin-bottom: 30px; color: #7a6c6c; }
-        .link-btn { display: block; background-color: #fff; color: #8c7b75; text-decoration: none; padding: 16px; margin-bottom: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(149, 132, 126, 0.05); transition: all 0.3s ease; font-weight: bold; }
-        .link-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 12px rgba(149, 132, 126, 0.15); background-color: #fffaf8; }
-        .gallery-title { margin-top: 40px; margin-bottom: 15px; font-size: 16px; color: #b0a4a4; letter-spacing: 1px; }
-        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .gallery-item { background-color: #fff; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .gallery-img { width: 100%; height: 100%; object-fit: cover; }
-        footer { margin-top: 50px; font-size: 11px; color: #b0a4a4; }
+        /* 全体の設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1f5fe 100%); /* 薄紫から水色のグラデーション */
+            color: #5d5d5d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* カードのデザイン（パールの光沢感を意識） */
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+            width: 90%;
+            padding: 40px 20px;
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), inset 0 0 15px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            border: 2px solid #ffffff;
+        }
+
+        /* アイコン（貝殻） */
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            display: inline-block;
+            filter: drop-shadow(0 0 5px rgba(255, 182, 193, 0.5));
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #9c27b0; /* 紫 */
+            margin-bottom: 20px;
+        }
+
+        .profile-text {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        /* ボタンのデザイン（ミントグリーンとピンク） */
+        .note-link {
+            display: inline-block;
+            text-decoration: none;
+            background: #e0f2f1; /* ミントグリーン */
+            color: #00796b;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #b2dfdb;
+        }
+
+        .note-link:hover {
+            background: #fce4ec; /* ホバー時にピンク */
+            color: #d81b60;
+            transform: translateY(-2px);
+            border-color: #f8bbd0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #999;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="profile-img"></div>
-        <h1>Name / AI Creator</h1>
-        <div class="bio">AI×SNSで家族との時間をデザインする。<br>HSP気質のワンオペママが綴る、<br>リアルミニチュアと日々の記録。</div>
-        <a href="https://www.threads.net/" class="link-btn" target="_blank">Threads <span>(日々の発信)</span></a>
-        <a href="https://note.com/" class="link-btn" target="_blank">Note <span>(詳細なノウハウ)</span></a>
-        <a href="#" class="link-btn" target="_blank">Portfolio <span>(制作実績)</span></a>
-        <div class="gallery-title">- My Works -</div>
-        <div class="gallery">
-            <div class="gallery-item"><img src="https://placehold.co/300x300/fcede6/a69595?text=Dog+1" class="gallery-img"></div>
-            <div class="gallery-item"><img src="https://placehold.co/300x300/fcede6/a69595?text=Dog+2" class="gallery-img"></div>
+        <div class="icon">🐚</div>
+        <h1>るあ (Lua)</h1>
+        
+        <div class="profile-text">
+            HSS型HSPの40代ワンオペママ。10年の重度不眠をお出汁とAIで克服した経験から、自責の毎日を卒業し、心に「余白」を作るヒントを発信しています。繊細な自分を認め、もっと好きになれるような優しい居場所を。パステルカラーとパール、AIが私の相棒です。🐚✨
         </div>
-        <footer>© 2026 My Portfolio</footer>
+
+        <a href="https://note.com/lua_lua3/n/n1356f0f40b4d" target="_blank" class="note-link">
+            noteで記事を読む ✨
+        </a>
+
+        <div class="footer">
+            &copy; 2026 Lua
+        </div>
     </div>
+
 </body>
 </html>
